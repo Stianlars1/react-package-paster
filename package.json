@@ -1,6 +1,6 @@
 {
   "name": "@stianlarsen/react-package-paster",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A versatile React component for seamlessly integrating package installation commands and usage examples into your project documentation, supporting npm, yarn, pnpm, and bun with customizable themes.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
