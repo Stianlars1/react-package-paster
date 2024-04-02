@@ -2,6 +2,12 @@
 
 A simple, yet powerful component for displaying installation commands and usage examples for npm packages. Ideal for package authors who want to provide a clear and efficient way for others to install and learn how to use their packages.
 
+![Installation Command Preview](https://github.com/stianlars1/react-package-paster/images/packageManager.png)
+_Installation command interface of react-package-paster_
+
+![Usage Example Preview](https://github.com/stianlars1/react-package-paster/images/codeSnippet.png)
+_Usage example preview interface of react-package-paster_
+
 ## Features
 
 - **Installation Command Copy**: Quickly display and copy package installation commands for npm, yarn, pnpm, and bun.
