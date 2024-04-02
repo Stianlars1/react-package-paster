@@ -36,32 +36,32 @@ yarn add @stianlarsen/react-package-paster
 Import the `CommandPaster` and use it with the `packageName` prop:
 
 ```jsx
-import { CodeSnippetManager } from "react-package-paster";
+import { CommandPaster } from "@stianlarsen/react-package-paster";
 
 function App() {
-  return <CodeSnippetManager packageName="your-package-name" />;
+  return <CommandPaster packageName="your-package-name" />;
 }
 ```
 
 ### For Usage Example
 
-Import the `CodeSnippetManager` and provide the `codeLanguage` and `codeSnippet` props:
+Import the `CommandPaster` and provide the `codeLanguage` and `codeSnippet` props:
 
 ```jsx
-import { CodeSnippetManager } from "react-package-paster";
+import { CommandPaster } from "@stianlarsen/react-package-paster";
 
 function App() {
-  const snippet = `import { CodeSnippetManager } from "react-package-paster"
+  const snippet = `import { CommandPaster } from "@stianlarsen/react-package-paster"
 
   function App() {
   return (
-    <CodeSnippetManager
+    <CommandPaster
       codeLanguage="javascript"
       codeSnippet="import {}"
     />
   );
 }`;
-  return <CodeSnippetManager codeLanguage="javascript" codeSnippet={snippet} />;
+  return <CommandPaster codeLanguage="javascript" codeSnippet={snippet} />;
 }
 ```
 

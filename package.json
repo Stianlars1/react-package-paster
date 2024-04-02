@@ -1,11 +1,11 @@
 {
   "name": "@stianlarsen/react-package-paster",
   "version": "1.0.0",
-  "description": "",
+  "description": "A versatile React component for seamlessly integrating package installation commands and usage examples into your project documentation, supporting npm, yarn, pnpm, and bun with customizable themes.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "tsc && shx mkdir -p dist/css/ && shx cp src/css/commandPaster.css dist/css/",
+    "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -21,12 +21,24 @@
     "pnpm",
     "Copy npm install component",
     "Copy package manager install command",
-    "Stian Larsen"
+    "Stian Larsen",
+    "package installation",
+    "code snippet",
+    "installation command",
+    "package documentation",
+    "react component",
+    "developer tools",
+    "documentation tools",
+    "code preview",
+    "code example",
+    "UI component",
+    "customizable",
+    "lightweight"
   ],
   "author": "Stian Larsen",
   "license": "ISC",
   "repository": "https://github.com/Stianlars1/react-package-paster",
-  "homepage": "https://react-package-paster.app",
+  "homepage": "https://react-package-paster.dev",
   "peerDependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
