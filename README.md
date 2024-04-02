@@ -2,10 +2,10 @@
 
 A simple, yet powerful component for displaying installation commands and usage examples for npm packages. Ideal for package authors who want to provide a clear and efficient way for others to install and learn how to use their packages.
 
-![Installation Command Preview](https://github.com/stianlars1/react-package-paster/images/packageManager.png)
+![Installation Command Preview](https://github.com/Stianlars1/react-package-paster/blob/6a5955ce2dd954c06004851829502681268a07c6/images/packageManager.png)
 _Installation command interface of react-package-paster_
 
-![Usage Example Preview](https://github.com/stianlars1/react-package-paster/images/codeSnippet.png)
+![Usage Example Preview](https://github.com/Stianlars1/react-package-paster/blob/6a5955ce2dd954c06004851829502681268a07c6/images/codeSnippet.png)
 _Usage example preview interface of react-package-paster_
 
 ## Features
