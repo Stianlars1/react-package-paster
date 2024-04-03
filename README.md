@@ -138,7 +138,7 @@ Contributions to `@stianlarsen/react-package-paster` are welcome!
 
 ## License
 
-`@stianlarsen/copy-to-clipboard` is [MIT licensed](./LICENSE).
+`@stianlarsen/react-package-paster` is [MIT licensed](./LICENSE).
 
 ## Contact
 
