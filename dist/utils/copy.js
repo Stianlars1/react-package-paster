@@ -22,14 +22,12 @@ export const copyToClipboard = async (text, callback) => {
             let successful = document.execCommand("copy");
             document.body.removeChild(textArea);
             const issuccess = await Promise.resolve(successful);
-            if (callback) {
+            if (issuccess && callback) {
                 return callback();
             }
-            return issuccess;
         }
         catch (err) {
             document.body.removeChild(textArea);
-            return Promise.reject("Failed to copy.");
         }
     }
 };

@@ -1,10 +1,10 @@
 import { jsx as _jsx, jsxs as _jsxs, Fragment as _Fragment } from "react/jsx-runtime";
 import { useState } from "react";
+import { CopyIcon } from "../../assets/copyIcon";
 import { packageManagersKeyAndCommands, tabs } from "../../utils/constants";
 import { copyToClipboard } from "../../utils/copy";
-import { CopyIcon } from "../../assets/copyIcon";
 import { PackageManagerSnippet } from "../packageManagerSnippet/packageManagerSnippet";
-export const PackageManager = ({ packageName }) => {
+export const PackageManager = ({ packageName, }) => {
     const [activeTab, setActiveTab] = useState(tabs.npm);
     const [textCopied, setTextCopied] = useState(false);
     const handleTextCopied = () => {

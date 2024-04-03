@@ -1,4 +1,7 @@
-export const copyToClipboard = async (text: string, callback?: () => void) => {
+export const copyToClipboard = async (
+  text: string,
+  callback?: () => void
+): Promise<void> => {
   if (navigator.clipboard && window.isSecureContext) {
     if (callback) {
       await navigator.clipboard.writeText(text);
@@ -23,13 +26,11 @@ export const copyToClipboard = async (text: string, callback?: () => void) => {
       let successful = document.execCommand("copy");
       document.body.removeChild(textArea);
       const issuccess = await Promise.resolve(successful);
-      if (callback) {
+      if (issuccess && callback) {
         return callback();
       }
-      return issuccess;
     } catch (err) {
       document.body.removeChild(textArea);
-      return Promise.reject("Failed to copy.");
     }
   }
 };

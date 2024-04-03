@@ -1,3 +1,3 @@
-import React from "react";
+import { FC } from "react";
 import { CodeSnippetCodeCopyProps } from "../../types/types";
-export declare const CodeSnippetCodeCopy: React.FC<CodeSnippetCodeCopyProps>;
+export declare const CodeSnippetCodeCopy: FC<CodeSnippetCodeCopyProps>;

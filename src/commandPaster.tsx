@@ -1,10 +1,12 @@
-import React from "react";
+import React, { ReactElement } from "react";
 import { CodeSnippetCodeCopy } from "./components/codeSnippetCodeCopy/codeSnippetCodeCopy";
 import { PackageManager } from "./components/packageManager/packageManager";
 import "./css/commandPaster.css";
 import { CommandPasterProps } from "./types/types";
 
-export const CommandPaster: React.FC<CommandPasterProps> = (props) => {
+export const CommandPaster: React.FC<CommandPasterProps> = (
+  props
+): ReactElement => {
   if ("packageName" in props) {
     return <PackageManager packageName={props.packageName} />;
   } else {

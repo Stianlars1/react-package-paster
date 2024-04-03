@@ -1,18 +1,18 @@
-import React, { useState } from "react";
+import { FC, ReactElement, useState } from "react";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import {
   oneDark as dark,
   oneLight as light,
 } from "react-syntax-highlighter/dist/esm/styles/prism";
+import { CopyIcon } from "../../assets/copyIcon";
 import { CodeSnippetCodeCopyProps } from "../../types/types";
 import { copyToClipboard } from "../../utils/copy";
 import { useTheme } from "../../utils/utils";
-import { CopyIcon } from "../../assets/copyIcon";
 
-export const CodeSnippetCodeCopy: React.FC<CodeSnippetCodeCopyProps> = ({
+export const CodeSnippetCodeCopy: FC<CodeSnippetCodeCopyProps> = ({
   codeLanguage,
   codeSnippet,
-}) => {
+}): ReactElement => {
   const [textCopied, setTextCopied] = useState<boolean>(false);
 
   const handleTextCopied = () => {

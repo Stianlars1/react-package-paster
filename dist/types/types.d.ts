@@ -10,8 +10,8 @@ export type PackageManagersType = {
 export interface PackageManagerProps {
     packageName: string;
 }
-export interface CodeSnippetCodeCopyProps {
+export type CodeSnippetCodeCopyProps = {
     codeLanguage: keyof typeof CodeLanguageMap;
     codeSnippet: string;
-}
+};
 export type CommandPasterProps = CodeSnippetCodeCopyProps | PackageManagerProps;

@@ -2,9 +2,9 @@ import { jsx as _jsx, jsxs as _jsxs, Fragment as _Fragment } from "react/jsx-run
 import { useState } from "react";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { oneDark as dark, oneLight as light, } from "react-syntax-highlighter/dist/esm/styles/prism";
+import { CopyIcon } from "../../assets/copyIcon";
 import { copyToClipboard } from "../../utils/copy";
 import { useTheme } from "../../utils/utils";
-import { CopyIcon } from "../../assets/copyIcon";
 export const CodeSnippetCodeCopy = ({ codeLanguage, codeSnippet, }) => {
     const [textCopied, setTextCopied] = useState(false);
     const handleTextCopied = () => {

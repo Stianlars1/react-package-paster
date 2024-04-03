@@ -1,3 +1,5 @@
+import { ReactElement } from "react";
+
 export const CopyIcon = ({
   onClick,
   className = " ",
@@ -6,7 +8,7 @@ export const CopyIcon = ({
   onClick: () => void;
   className?: string;
   showSuccessIcon?: boolean;
-}) => {
+}): ReactElement => {
   if (showSuccessIcon) {
     return (
       <svg

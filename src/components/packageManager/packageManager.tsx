@@ -1,11 +1,13 @@
-import React, { FC, useState } from "react";
+import { FC, ReactElement, useState } from "react";
+import { CopyIcon } from "../../assets/copyIcon";
 import { PackageManagerProps } from "../../types/types";
 import { packageManagersKeyAndCommands, tabs } from "../../utils/constants";
 import { copyToClipboard } from "../../utils/copy";
-import { CopyIcon } from "../../assets/copyIcon";
 import { PackageManagerSnippet } from "../packageManagerSnippet/packageManagerSnippet";
 
-export const PackageManager: FC<PackageManagerProps> = ({ packageName }) => {
+export const PackageManager: FC<PackageManagerProps> = ({
+  packageName,
+}): ReactElement => {
   const [activeTab, setActiveTab] = useState<string>(tabs.npm);
   const [textCopied, setTextCopied] = useState<boolean>(false);
 
