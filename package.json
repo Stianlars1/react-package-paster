@@ -3,12 +3,9 @@
   "version": "1.0.2",
   "description": "A versatile React component for seamlessly integrating package installation commands and usage examples into your project documentation, supporting npm, yarn, pnpm, and bun with customizable themes.",
   "main": "dist/index.js",
-  "types": [
-    "dist/index.d.ts",
-    "dist/types/types.d.ts"
-  ],
+  "types": "dist/index.d.ts",
   "scripts": {
-    "build": "tsc",
+    "build": "tsc && shx mkdir -p dist/css/ && shx cp src/css/commandPaster.css dist/css/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
