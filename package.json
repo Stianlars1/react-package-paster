@@ -36,7 +36,7 @@
     "lightweight"
   ],
   "author": "Stian Larsen",
-  "license": "ISC",
+  "license": "MIT",
   "repository": "https://github.com/Stianlars1/react-package-paster",
   "homepage": "https://react-package-paster.dev",
   "peerDependencies": {
