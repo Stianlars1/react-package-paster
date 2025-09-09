@@ -43,6 +43,7 @@ export const CodeSnippetCodeCopy: FC<CodeSnippetCodeCopyProps> = ({
               language={"javascript"}
               style={isDarkmode ? dark : light}
               className="syntax-highlighter"
+              wrapLongLines={true}
             >
               {codeSnippet}
             </SyntaxHighlighter>
